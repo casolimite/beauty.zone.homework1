@@ -46,6 +46,11 @@
 }
 
 /* Base */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-brand-scuro);
   font-family: 'play', sans-serif;
@@ -170,4 +175,22 @@ h1 {
   font-size: 16px;
   line-height: 1.3;
   color: var(--color-base-scuro);
+}
+
+/* Footer */
+.address-link {
+  color: var(--color-base-chiaro);
+  text-decoration: none;
+}
+.footer {
+  background-color: var(--color-brand-scuro);
+  padding: 60px 0;
+}
+.footer a:hover {
+  color: var(--color-brand-chiaro);
+  transform: scale(1.1);
+}
+.nav-list-footer {
+  color: var(--color-base-chiaro);
+  text-decoration: none;
 }
