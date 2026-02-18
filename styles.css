@@ -1,0 +1,173 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v50-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v50-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v50-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
+}
+:root {
+  --color-brand-scuro: #011c44;
+  --color-brand-chiaro: #2b7fff;
+  --color-base-scuro: #000000;
+  --color-base-chiaro: #ffffff;
+  --color-note: #4a4a4a;
+}
+
+/* Base */
+body {
+  color: var(--color-brand-scuro);
+  font-family: 'play', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+/* Button */
+.button {
+  color: var(--color-base-chiaro);
+  font-weight: 600;
+  font-size: 18px;
+
+  padding: 16px 32px;
+
+  background: var(--color-brand-chiaro);
+  border: none;
+  border-radius: 999px;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-scuro);
+  background: transparent;
+  border: 2px solid var(--color-brand-scuro);
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 114px;
+  color: var(--color-brand-chiaro);
+}
+
+/* Nav list */
+.nav-list {
+  color: var(--color-brand-scuro);
+  text-decoration: none;
+}
+
+.nav-list:hover {
+  color: var(--color-brand-chiaro);
+  font-weight: 700;
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-chiaro);
+  text-align: left;
+  font-size: 140px;
+  font-weight: 700;
+}
+.hero-subtitle {
+  color: var(--color-brand-scuro);
+}
+.hero-note {
+  color: var(--color-note);
+}
+
+/* About */
+.about-content {
+  line-height: 1.7;
+  font-family: 'roboto', sans-serif;
+  color: var(--color-brand-scuro);
+  font-weight: 700;
+}
+.about-content .accent {
+  color: var(--color-brand-chiaro);
+}
+.about-text {
+  .about-text {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+  font-weight: 400;
+}
+.accent-abouy-text {
+  font-weight: 600;
+}
+
+/* Why */
+
+.why {
+  padding: 80px 0; /* вертикальные отступы секции */
+  text-align: center; /* чтобы заголовок и карточки были по центру */
+}
+#why-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: 0;
+  margin: 1.3; /* отступ вниз до карточек */
+  color: var(--color-brand-scuro);
+}
+.accent {
+  color: var(--color-brand-chiaro);
+}
+.why-list h3 {
+  margin: 0 0 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-brand-scuro);
+}
+
+.why-list p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--color-base-scuro);
+}
