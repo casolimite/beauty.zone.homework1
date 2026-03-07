@@ -11,25 +11,26 @@
     <!-- =============== HEADER =============== -->
     <header class="header">
       <div class="container">
-        <!-- Логотип -->
-        <a href="#top" class="logo">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
+        <div class="header-container">
+          <!-- Логотип -->
+          <a href="#top" class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
 
-        <!-- Навигация -->
-        <nav class="nav" aria-label="Главная навигация">
-          <ul>
-            <li><a class="nav-list" href="#about">Про нас</a></li>
-            <li><a class="nav-list" href="#why">Чому ми</a></li>
-            <li><a class="nav-list" href="#procedures">Процедури</a></li>
-            <li><a class="nav-list" href="#contacts">Контакти</a></li>
-          </ul>
-        </nav>
-
-        <!-- Кнопка -->
-        <button class="button" type="button">
-          <img src="./images/Vector.jpg" alt="Телефонная трубка" />
-        </button>
+          <!-- Навигация -->
+          <nav class="header-nav" aria-label="Главная навигация">
+            <ul class="header-menu">
+              <li><a class="nav-list" href="#about">Про нас</a></li>
+              <li><a class="nav-list" href="#why">Чому ми</a></li>
+              <li><a class="nav-list" href="#procedures">Процедури</a></li>
+              <li><a class="nav-list" href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
+          <!-- Кнопка -->
+          <button class="button" type="button">
+            <img src="./images/Vector.jpg" alt="Телефонная трубка" />
+          </button>
+        </div>
       </div>
     </header>
 
@@ -39,12 +40,16 @@
       <section class="hero">
         <div class="container">
           <p class="hero-subtitle">Косметологічна клініка</p>
-          <h1 class="hero-title" id="hero-title">Beauty Zone</h1>
+          <h1 class="hero-title" id="hero-title">
+            Beauty <br />
+            Zone
+          </h1>
 
           <button class="button" type="button">Замовити дзвінок</button>
 
           <p class="hero-note">
-            Запишись та отримай безкоштовну консультацію косметолога
+            Запишись та отримай безкоштовну <br />
+            консультацію косметолога
           </p>
         </div>
       </section>
@@ -52,28 +57,37 @@
       <!-- ПРО НАС -->
       <section id="about" class="about section">
         <div class="container">
-          <article class="about-content">
-            <h2 id="about-title">
-              Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
-            </h2>
-          </article>
-          <div class="about-text">
-            <p>
-              Наша косметологічна клініка пропонує вам професійні послуги з
-              догляду за шкірою обличчя та тіла.
-            </p>
+          <div class="about-wrapper">
+            <div class="about-info">
+              <h2 id="about-title" class="about-title">
+                Перевтілюйтесь <br />
+                в <span class="accent">Beauty Zone!</span>
+              </h2>
 
-            <p>
-              B <span class="accent-abouy-text">Beauty Zone</span> ми гарантуємо
-              найвищі стандарти якості та приємний сервіс. Наші косметологічні
-              процедури та препарати допоможуть вам підтримувати свою красу та
-              молодість. З нами краса назавжди!
-            </p>
+              <div class="about-text">
+                <p>
+                  Наша косметологічна клініка пропонує вам професійні послуги
+                  <br />
+                  з догляду за шкірою обличчя та тіла.
+                </p>
+
+                <p>
+                  В <span class="accent-abouy-text">Beauty Zone</span>
+                  ми гарантуємо найвищі стандарти якості
+                  <br />
+                  та приємний сервіс. Наші косметологічні процедури та препарати
+                  <br />
+                  допоможуть вам підтримувати свою красу та молодість. <br />
+                  З нами краса назавжди!
+                </p>
+              </div>
+            </div>
+
+            <div class="about-images">
+              <img src="./images/donnagiu.jpg" alt="Лицо до процедури" />
+              <img src="./images/donnasu.jpg" alt="Лицо после процедури" />
+            </div>
           </div>
-          <figure class="about__images">
-            <img src="./images/donnagiu.jpg" alt="Лицо до процедури" />
-            <img src="./images/donnasu.jpg" alt="Лицо после процедури" />
-          </figure>
         </div>
       </section>
 
