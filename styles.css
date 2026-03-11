@@ -153,6 +153,10 @@ ul {
 
 .hero {
   padding: 16.52px 0px 194.48px 0px;
+  background-image: url(./images/cosmetologo.al.lavoro.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 0;
@@ -265,8 +269,45 @@ ul {
 }
 
 /* Procedures */
+.procedures__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.procedures__list article {
+  position: relative;
+}
+
+.procedures__list article::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 40%,
+    rgba(1, 28, 68, 0.7) 85%,
+    var(--color-brand-scuro) 100%
+  );
+
+  border-radius: 40px;
+}
+.procedures__list img {
+  width: 300px;
+  border-radius: 40px;
+}
+.procedures__list li {
+  flex: 0 0 auto;
+}
 .interval-procedures {
   margin-bottom: 48px;
+  text-align: center;
 }
 
 /* Contacts */
